@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/styleSheet.css">
+</head>
+
+<body>
+    <header>
+        <img src = "../images/foxCoding.svg" alt="My logo SVG">
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <button class="loginButton-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="../Controllers/loginController.php" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required name="email">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required name="password">
+                    <label>Password</label>
+                </div>
+                <button type="submit" name="submit" class="submitButton">Login</button>
+
+                <div class="loginRegister">
+                    <p>Create a new account <a href="#" class="registerLink">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Sing up</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="user" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="submitButton">Sign up</button>
+                <div class="loginRegister">
+                    <p>Already have an account? <a href="#" class="loginLink">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>    
+
+    <script src="../javascript/script.js"></script>
+    <!-- This will help in the use the library of the icons for the mail and password-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

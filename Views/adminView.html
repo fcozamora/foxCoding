@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoer" content="width=device-width,initial-scale=1.0">
+    <title>adminView</title>
+    <link rel="stylesheet" href="../css/styleSheet.css">
+</head>
+
+<body>
+    <header>
+        <img src = "../images/foxCoding.svg" alt="My logo SVG">
+        <nav class="navigationAdmin">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <button class="logoutButton-popup">Log out</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h2 class="display-6 text-center">Users from Database</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-borderer text-center">
+                            <tr class="bg-dark text-white">
+                                <td>User ID</td>
+                                <td>Name</td>
+                                <td>Email</td>
+                                <td>Role</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="../javascript/script.js"></script>
+    <!-- This will help in the use the library of the icons for the mail and password-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
