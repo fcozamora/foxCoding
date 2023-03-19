@@ -17,11 +17,6 @@ body {
     background-position: center;
 }
 
-img {
-    width: 20%;
-    height: auto;
-}
-
 header{
     position: fixed;
     top: 0;
@@ -35,10 +30,14 @@ header{
     z-index: 99;
 }
 
+img {
+    width: 10%;
+    height: auto;
+}
+
 .logo {
-    font-size: 2em;
-    color: white;
-    user-select: none;
+    width: 10%;
+    height: auto;
 }
 
 h2 {
@@ -94,55 +93,10 @@ h2 {
 
 }
 
-.navigation .logoutButton-popup {
-    width: 130px;
-    height: 50px;
-    background-color: transparent;
-    border: 2px solid white;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: white;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.navigation .logoutButton-popup:hover {
-    background-color: white;
-    color: #01192e;
-    font-weight: 700;
-
-}
-
-.container {
-    position: relative;
-    width: 30%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    overflow: hidden;
-}
-
-
-.container.active {
-    width: 30%;
-    height: 100%;
-    padding: 2%;
-}
-
 .wrapper {
     position: relative;
     width: 30%;
-    height: 100%;
+    height: auto;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -151,24 +105,25 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 2px;
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .5s ease;
 }
 
 .wrapper.active-popup {
-    transform: scale(1);
+    transform: scale(.5);
 }
 
 .wrapper.active {
     width: 30%;
-    height: 100%;
+    height: auto;
     padding: 2%;
 }
 
 .wrapper .form-box {
-    width: 100%;
+    width: 30%;
+    height: auto;
     padding: 40px;
 }
 

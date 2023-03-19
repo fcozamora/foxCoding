@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/foxcodingbg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(5, 10, 74, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.container {
+    overflow: hidden;
+    overflow-x: auto;
+    clear: both;
+    width: 50%;
+}
+
+.tableUsers {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 25px;
+}
+
+.navigationAdmin .logoutButton-popup {
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigationAdmin .logoutButton-popup:hover {
+    background-color: white;
+    color: #01192e;
+    font-weight: 700;
+
+}
+
+.navigationAdmin a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigationAdmin a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}

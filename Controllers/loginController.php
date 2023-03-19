@@ -2,6 +2,7 @@
 session_start(); 
 include "../Configs/config.php";
 include "../Models/loginModel.php";
+include "../Models/dbModel.php";
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -22,8 +23,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: ../Views/loginView.html?error=Password is required");
 	    exit();
 	}else{
-		$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 
+		$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) === 1) {
@@ -53,7 +54,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 	}
 	
 }else{
-	header("Location: ../Views/loginView.php");
+	header("Location: ../Views/loginView.html");
 	exit();
 }
 
