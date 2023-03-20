@@ -34,9 +34,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
 				$_SESSION['descriptionAuth'] = userIdAuth($row['id_authorization']);
-				//echo($_SESSION['descriptionAuth']);
 				if ($row['id_authorization'] == 1){					
-					header("Location: ../Views/adminView.html");
+					header("Location: ../Views/adminView.php");
 					exit();
 				} else if ($row['id_authorization'] == 2){					
 					header("Location: ../Views/accountingView.html");

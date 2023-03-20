@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src = "../images/foxCoding.svg" alt="My logo SVG">
+        <img class="logo" src = "../images/foxCoding.svg">
         <nav class="navigationAdmin">
             <form action="../Controllers/logoutController.php" method="post">
                 <a href="">Home</a>
@@ -29,11 +29,12 @@
                 <th>EMAIL</th>
                 <th>ROLE</th>
             </tr>
-            <button onclick="tableCall()"> Click </button>
-            <div> </div>
+            <?php
+            require_once("../Models/adminTableModel.php");
+            usersTable();
+            ?>
         </table>
         
     </div>
-    <script src="../javascript/users.js"></script>
 </body>
 </html>
