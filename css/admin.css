@@ -48,12 +48,21 @@ h2 {
     overflow: hidden;
     overflow-x: auto;
     clear: both;
-    width: 50%;
+    width: 60%;
+}
+
+.container h2 {
+    font-size: 3em;
+    color: rgb(226, 87, 0);
+}
+
+.container h3 {
+    color: white;
 }
 
 .tableUsers {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);

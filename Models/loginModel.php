@@ -9,7 +9,7 @@ function userIdAuth($id_authorization) {
     global $conn;
     $query="SELECT description FROM authorizations WHERE id = $id_authorization";
     $result = $conn->query($query)->fetch_row();
-    return $result[0];
+    return $result;
 }
 
 ?>

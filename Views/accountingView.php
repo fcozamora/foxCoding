@@ -1,3 +1,13 @@
+<?php
+session_start();
+include("../Configs/config.php");
+
+if(isset($_SESSION['name'])==false){
+    header("../Views/loginView.html");
+    die();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +39,10 @@
                 <th>Email</th>
                 <th>Picture</th>
             </tr>
+            <?php
+            require_once "../Models/reqresApiModel.php";
+            reqresApi();
+            ?>
         </table>        
     </div>
 </body>

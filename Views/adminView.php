@@ -1,3 +1,13 @@
+<?php
+session_start();
+include("../Configs/config.php");
+
+if(isset($_SESSION["name"])==false){
+    header("../Views/loginView.html");
+    die();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,25 +26,34 @@
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Contact</a>
-                <button type="submit" class="logoutButton-popup">Log out</button>
+                <button type="submit" name="logoutButton" class="logoutButton-popup">Log out</button>
             </form>
         </nav>
     </header>
 
     <div class="container">
-        <table class="tableUsers" border=".5">
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>EMAIL</th>
-                <th>ROLE</th>
-            </tr>
+        <form action="?" method="get">
             <?php
-            require_once("../Models/adminTableModel.php");
-            usersTable();
+            require_once("../Models/loginModel.php");
+
             ?>
-        </table>
-        
+            <h2>Welcome <?php echo $_SESSION["name"]?></h2>
+            <h3>Your Role is <?php
+            echo "Admin";
+            ?></h3>
+            <table class="tableUsers" border=".5">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ROLE</th>
+                </tr>
+                <?php
+                require_once("../Models/adminTableModel.php");
+                usersTable();
+                ?>
+            </table>
+    </form>
     </div>
 </body>
 </html>

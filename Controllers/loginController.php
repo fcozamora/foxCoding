@@ -38,7 +38,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 					header("Location: ../Views/adminView.php");
 					exit();
 				} else if ($row['id_authorization'] == 2){					
-					header("Location: ../Views/accountingView.html");
+					header("Location: ../Views/accountingView.php");
 					exit();
 				}
             	
