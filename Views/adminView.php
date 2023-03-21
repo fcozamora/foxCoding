@@ -2,8 +2,8 @@
 session_start();
 include("../Configs/config.php");
 
-if(isset($_SESSION["name"])==false){
-    header("../Views/loginView.html");
+if(isset($_SESSION['id'])==false){
+    header("Location: ../Views/loginView.html");
     die();
 }
 
@@ -34,12 +34,10 @@ if(isset($_SESSION["name"])==false){
     <div class="container">
         <form action="?" method="get">
             <?php
-            require_once("../Models/loginModel.php");
-
+            require_once("../Configs/config.php");
             ?>
-            <h2>Welcome <?php echo $_SESSION["name"]?></h2>
-            <h3>Your Role is <?php
-            echo "Admin";
+            <h2>Welcome <?php echo $_SESSION['name'];?></h2>
+            <h3>Your Role is Admin<?php
             ?></h3>
             <table class="tableUsers" border=".5">
                 <tr>

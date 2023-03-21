@@ -1,4 +1,6 @@
 <?php
+
+//Function to print and call from API
 function reqresApi(){
   $link = "https://reqres.in/api/users";
   $curlHandle = curl_init();

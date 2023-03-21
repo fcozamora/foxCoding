@@ -1,5 +1,8 @@
 <?php
 include("../Configs/config.php");
+
+/*This function will be used to create the table at the Admin View panel,
+it merges de users.id_authorization and autorizations.id to print the description*/
 function usersTable(){
     global $conn;
     $sql="SELECT users.id, users.name, users.email, users.id_authorization, authorizations.description, authorizations.id
