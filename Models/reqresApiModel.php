@@ -11,7 +11,7 @@ function reqresApi(){
   curl_setopt_array($curlHandle,$table);
   $resp = curl_exec($curlHandle);
   $data = json_decode($resp,true);
-  foreach($data["data"] as $key => $val){
+  foreach($data["data"] as $val){
     echo "<tr>";
     echo "<td>".$val["id"]."</td>";
     echo "<td>".$val["first_name"] ." ". $val["last_name"]."</td>";

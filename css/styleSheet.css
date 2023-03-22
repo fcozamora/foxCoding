@@ -22,7 +22,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    height: 10%;
+    padding: 5% 20%;
     background: rgba(5, 10, 74, .5);
     display: flex;
     justify-content: space-between;
@@ -97,7 +98,7 @@ h2 {
 .wrapper {
     position: relative;
     width: 30%;
-    height: 50%;
+    height: 40%;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
