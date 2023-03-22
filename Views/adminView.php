@@ -37,7 +37,7 @@ if(isset($_SESSION['id'])==false){
             require_once("../Configs/config.php");
             ?>
             <h2>Welcome <?php echo $_SESSION['name'];?></h2>
-            <h3>Your Role is Admin<?php
+            <h3>Your Role is <?php echo implode($_SESSION['descriptionAuth']);
             ?></h3>
             <table class="tableUsers" border=".5">
                 <tr>

@@ -33,12 +33,12 @@ if(isset($_SESSION['name'])==false){
 
     <div class="container">
     <?php
-            require_once("../Configs/config.php");
-            
-            ?>
-            <h2>Welcome <?php echo $_SESSION['name'];?></h2>
-            <h3>Your Role is Accounting<?php
-            ?></h3>
+        require_once("../Configs/config.php");
+        
+        ?>
+        <h2>Welcome <?php echo $_SESSION['name'];?></h2>
+        <h3>Your Role is Accounting<?php
+        ?></h3>
         <table class="tableUsers" border=".5">
             <tr>
                 <th>Id</th>
